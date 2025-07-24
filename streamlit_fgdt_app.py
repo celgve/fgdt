@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-excel_file = "Models Comparison FortiNet (Tables).xlsx"
+excel_file = "Data/Models Comparison FortiNet (Tables).xlsx"
 df_raw = pd.read_excel(excel_file, sheet_name="FG_Features_Matrix", engine="openpyxl", header=None, storage_options=None, engine_kwargs=None)
 
 model_names = df_raw.iloc[1, 2:12].tolist()
